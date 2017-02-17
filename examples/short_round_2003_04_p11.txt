@@ -1,0 +1,22 @@
+X	DC	6
+Y	DC	4
+Z	DC	0
+	LOAD	X
+	SUB	Y
+	STORE	Z
+	PRINT	Z	Should print 2
+	LOAD	Y
+	SUB	=2
+	STORE	Y
+	PRINT	X	Should print 6
+	LOAD	Z
+	ADD	=2
+	STORE	X
+	SUB	Z
+	PRINT	Y	Should print 2
+	STORE	X
+	PRINT	X	Should print 2
+	ADD	Z
+	ADD	X
+	STORE	X
+	PRINT	X	Should print 6

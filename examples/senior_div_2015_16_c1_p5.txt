@@ -1,0 +1,18 @@
+A	DC	2
+B	DC	1
+C	DC	1
+D	DC	1
+TOP	LOAD	B
+	MULT	A
+	STORE	B
+	LOAD	C
+	ADD	B
+	STORE	C
+	LOAD	D
+	ADD	=1
+	STORE	D
+	LOAD	C
+	SUB	=100
+	BL	TOP
+	PRINT	D	Should print 7
+	END

@@ -1,0 +1,12 @@
+	READ	N	ACSL example uses 3
+A	DC	1
+START	LOAD	N
+	SUB	=1
+	BE	RSLT
+	STORE	N
+	LOAD	A
+	ADD	=2
+	STORE	A
+	BU	START
+RSLT	PRINT	A	ACSL example results in 5
+	END
